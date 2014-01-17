@@ -1,0 +1,57 @@
+body {
+	background-color: #629632;
+	font-family: "Century Gothic";
+}
+
+table {
+	font-size: 16px;
+	font-family: "Century Gothic";
+	color: blue;
+	margin-left: 0 auto;
+	width: 900px;
+	border: 2px solid white;
+	background-color: #629632;
+}
+
+td {
+	background-color: white;
+	padding-left: 5px;
+}
+
+th {
+	background-color: #FCDC3B;
+	color: black;
+	font-size: 16px;
+}
+
+td.group {
+	text-align: center;
+}
+
+h1 {
+	color: #FCDC3B;
+	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 26px;
+}
+
+h2 {
+	color: black;
+	font-size: 12px;
+}
+
+a {
+	text-decoration: none;
+	color: black;
+}
+
+button {
+	color: black;
+	width: 175px;
+	height: 25px;
+	font-size: 10px;
+	position: absolute;
+	margin-left: 725px;
+	margin-top: 0px;
+	border-radius: 2px;
+	background-color: white;
+}

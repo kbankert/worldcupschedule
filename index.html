@@ -1,0 +1,40 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.7/angular.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+</head>
+<body>
+	<h1>World Cup Group Stage Match Schedule</h1>
+	<button><strong><a href="http://www.fifa.com/mm/document/tournament/competition/01/52/99/91/2014fwc_matchschedule_wgroups_12122013_en_neutral.pdf">Official FIFA Schedule Here</strong></a></button>
+	<h2>Search Schedule</h2>
+	<div x-ng-app="" x-ng-controller="gamesCtrl">
+
+		<input type="text" size="30" placeholder="Search All" x-ng-model="searchText.$" />
+		<br />
+		<input type="text" size="30" placeholder="Search by Date" x-ng-model="searchText.date" />
+		<br />
+		<input type="text" size="30" placeholder="Search by City" x-ng-model="searchText.city" />
+		<h2>Click on Heading to Sort Schedule</h2>
+		<table>
+			<tr>
+				<th x-ng-click="propName='date'; reverse = !reverse;"><a href="">Date</a></th>
+				<th x-ng-click="propName='group'; reverse = !reverse;"><a href="">Group</a></th>
+				<th x-ng-click="propName='home'; reverse = !reverse;"><a href="">Home Team</a></th>
+				<th x-ng-click="propName='away'; reverse = !reverse;"><a href="">Away Team</a></th>
+				<th x-ng-click="propName='city'; reverse = !reverse;"><a href="">City</a></th>
+			</tr>
+			<tr x-ng-repeat="game in games | filter:searchText | orderBy:propName:reverse">
+				<td>{{game.date}}</td>
+				<td class="group">{{game.group}}</td>
+				<td>{{game.home}}</td>
+				<td>{{game.away}}</td>
+				<td>{{game.city}}</td>
+			</tr>
+		</table>
+	
+	</div>
+
+</body>
+</html>
