@@ -1,6 +1,8 @@
 body {
-	background-color: #629632;
-	font-family: "Century Gothic";
+	background: url("http://wallpoper.com/images/00/26/62/45/soccer-stadium_00266245.jpg");
+	*/font-family: "Century Gothic";
+	background-repeat: no-repeat;
+	background-color: black;	
 }
 
 table {
@@ -9,7 +11,7 @@ table {
 	color: blue;
 	margin-left: 0 auto;
 	width: 900px;
-	border: 2px solid white;
+	border: 1px solid white;
 	background-color: #629632;
 }
 
@@ -35,7 +37,7 @@ h1 {
 }
 
 h2 {
-	color: black;
+	color: white;
 	font-size: 12px;
 }
 
@@ -54,4 +56,11 @@ button {
 	margin-top: 0px;
 	border-radius: 2px;
 	background-color: white;
+}
+
+input {
+	border: 1px solid #FCDC3B;
+	width: 200px;
+	height: 20px;
+	margin-top: 3px;
 }
